@@ -1,27 +1,37 @@
 # ReluAIBot 🤖
 
-Un chatbot inteligent bazat pe arhitectură serverless.
+Un chatbot inteligent bazat pe arhitectură serverless folosind **Hono** și **Cloudflare Workers**.
 
-## 🚀 Despre Proiect
-Acest proiect își propune să ofere o soluție rapidă și scalabilă pentru interacțiunea cu utilizatorii, folosind tehnologii precum:
-- **Serverless functions** (Cloudflare Workers / Vercel Functions / AWS Lambda)
-- **AI Models** (OpenAI, Anthropic, sau Llama prin servicii de hosting)
-- **Integrare** cu canale precum Telegram, Discord sau Web.
+## 🚀 Tehnologii
+- **Framework:** [Hono](https://hono.dev/)
+- **Runtime:** [Cloudflare Workers](https://workers.cloudflare.com/)
+- **Limbaj:** TypeScript
 
 ## 🛠️ Setup Local
-```bash
-# Clonează repo
-git clone https://github.com/REPLACE_WITH_YOUR_GITHUB_USER/ReluAIBot.git
 
-# Instalează dependențele
-npm install
+1. **Instalează dependențele:**
+   ```bash
+   npm install
+   ```
 
-# Rulează local
-npm start
-```
+2. **Rulează în modul de dezvoltare:**
+   ```bash
+   npm run dev
+   ```
 
-## 🏗️ Arhitectură
-*În curând: detalii despre arhitectura serverless aleasă.*
+3. **Publicare pe Cloudflare:**
+   ```bash
+   npm run deploy
+   ```
+
+## 🏗️ Structura Proiectului
+- `src/index.ts`: Punctul de intrare în aplicație și definirea rutelor.
+- `wrangler.jsonc`: Configurarea pentru Cloudflare Workers.
+
+## 🤖 Plan de Viitor
+- [ ] Integrare OpenAI/Anthropic API pentru inteligență.
+- [ ] Webhook pentru Telegram sau Discord.
+- [ ] Stocare istoric conversații în Cloudflare D1 (SQL) sau KV.
 
 ---
 Creat cu ❤️ pentru automatizare.
