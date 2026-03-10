@@ -1,0 +1,17 @@
+# Ignoră dependențe
+node_modules/
+
+# Fișiere de configurare sensibile
+.env
+.env.local
+.env.*.local
+
+# Build-uri
+dist/
+build/
+.next/
+out/
+
+# Sistem de operare
+.DS_Store
+Thumbs.db
