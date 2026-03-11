@@ -1,20 +1,17 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "reluaibot",
+  "name": "relu",
   "main": "src/index.ts",
-  "compatibility_date": "2026-03-10"
-  // "compatibility_flags": [
-  //   "nodejs_compat"
-  // ],
-  // "vars": {
-  //   "MY_VAR": "my-variable"
-  // },
-  // "kv_namespaces": [
-  //   {
-  //     "binding": "MY_KV_NAMESPACE",
-  //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-  //   }
-  // ],
+  "compatibility_date": "2026-03-10",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "ECOMPLEX_BOT_KV",
+      "id": "715dd2fee5b44d52bc127efbf357a47c"
+    }
+  ],
   // "r2_buckets": [
   //   {
   //     "binding": "MY_BUCKET",
